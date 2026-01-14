@@ -1,10 +1,13 @@
+import fondo from "../../assets/fondo.jpg"; 
+
 const Hero = () => {
     return (
         <div style={{ 
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&q=80&w=1920')`,
+            
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(${fondo})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-            height: '40vh',   
+            height: '40vh',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -13,7 +16,7 @@ const Hero = () => {
             textAlign: 'center',
             marginBottom: '0px'
         }}>
-            <h1 style={{ 
+             <h1 style={{ 
                 fontFamily: "'Playfair Display', serif", 
                 fontSize: '3.5rem', 
                 marginBottom: '15px',
